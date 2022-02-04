@@ -1,0 +1,327 @@
+{
+  "type": "*node.Root",
+  "position": { "startPos": 6, "endPos": 202, "startLine": 2, "endLine": 15 },
+  "Stmts": [
+    {
+      "type": "*stmt.Echo",
+      "position": { "startPos": 6, "endPos": 29, "startLine": 2, "endLine": 3 },
+      "Exprs": [
+        {
+          "type": "*scalar.String",
+          "position": {
+            "startPos": 11,
+            "endPos": 24,
+            "startLine": 2,
+            "endLine": 2
+          },
+          "Value": "\"hello world\""
+        }
+      ]
+    },
+    {
+      "type": "*stmt.InlineHtml",
+      "position": {
+        "startPos": 29,
+        "endPos": 30,
+        "startLine": 4,
+        "endLine": 4
+      },
+      "Value": "\n"
+    },
+    {
+      "type": "*stmt.Expression",
+      "position": {
+        "startPos": 36,
+        "endPos": 53,
+        "startLine": 6,
+        "endLine": 6
+      },
+      "Expr": {
+        "type": "*assign.Assign",
+        "position": {
+          "startPos": 36,
+          "endPos": 52,
+          "startLine": 6,
+          "endLine": 6
+        },
+        "Variable": {
+          "type": "*expr.Variable",
+          "position": {
+            "startPos": 36,
+            "endPos": 40,
+            "startLine": 6,
+            "endLine": 6
+          },
+          "VarName": {
+            "type": "*node.Identifier",
+            "position": {
+              "startPos": 36,
+              "endPos": 40,
+              "startLine": 6,
+              "endLine": 6
+            },
+            "Value": "var"
+          }
+        },
+        "Expression": {
+          "type": "*scalar.String",
+          "position": {
+            "startPos": 43,
+            "endPos": 52,
+            "startLine": 6,
+            "endLine": 6
+          },
+          "Value": "'my name'"
+        }
+      }
+    },
+    {
+      "type": "*stmt.Expression",
+      "position": {
+        "startPos": 54,
+        "endPos": 69,
+        "startLine": 7,
+        "endLine": 7
+      },
+      "Expr": {
+        "type": "*assign.Assign",
+        "position": {
+          "startPos": 54,
+          "endPos": 68,
+          "startLine": 7,
+          "endLine": 7
+        },
+        "Variable": {
+          "type": "*expr.Variable",
+          "position": {
+            "startPos": 54,
+            "endPos": 59,
+            "startLine": 7,
+            "endLine": 7
+          },
+          "VarName": {
+            "type": "*node.Identifier",
+            "position": {
+              "startPos": 54,
+              "endPos": 59,
+              "startLine": 7,
+              "endLine": 7
+            },
+            "Value": "name"
+          }
+        },
+        "Expression": {
+          "type": "*scalar.String",
+          "position": {
+            "startPos": 62,
+            "endPos": 68,
+            "startLine": 7,
+            "endLine": 7
+          },
+          "Value": "'josh'"
+        }
+      }
+    },
+    {
+      "type": "*stmt.If",
+      "position": {
+        "startPos": 71,
+        "endPos": 202,
+        "startLine": 9,
+        "endLine": 15
+      },
+      "Cond": {
+        "type": "*binary.Equal",
+        "position": {
+          "startPos": 75,
+          "endPos": 92,
+          "startLine": 9,
+          "endLine": 9
+        },
+        "Left": {
+          "type": "*expr.Variable",
+          "position": {
+            "startPos": 75,
+            "endPos": 79,
+            "startLine": 9,
+            "endLine": 9
+          },
+          "VarName": {
+            "type": "*node.Identifier",
+            "position": {
+              "startPos": 75,
+              "endPos": 79,
+              "startLine": 9,
+              "endLine": 9
+            },
+            "Value": "var"
+          }
+        },
+        "Right": {
+          "type": "*scalar.String",
+          "position": {
+            "startPos": 83,
+            "endPos": 92,
+            "startLine": 9,
+            "endLine": 9
+          },
+          "Value": "'my name'"
+        }
+      },
+      "Stmt": {
+        "type": "*stmt.StmtList",
+        "position": {
+          "startPos": 94,
+          "endPos": 113,
+          "startLine": 9,
+          "endLine": 11
+        },
+        "Stmts": [
+          {
+            "type": "*stmt.Echo",
+            "position": {
+              "startPos": 98,
+              "endPos": 111,
+              "startLine": 10,
+              "endLine": 10
+            },
+            "Exprs": [
+              {
+                "type": "*scalar.String",
+                "position": {
+                  "startPos": 103,
+                  "endPos": 110,
+                  "startLine": 10,
+                  "endLine": 10
+                },
+                "Value": "'hello'"
+              }
+            ]
+          }
+        ]
+      },
+      "ElseIf": [
+        {
+          "type": "*stmt.ElseIf",
+          "position": {
+            "startPos": 114,
+            "endPos": 164,
+            "startLine": 11,
+            "endLine": 13
+          },
+          "Cond": {
+            "type": "*binary.Equal",
+            "position": {
+              "startPos": 122,
+              "endPos": 141,
+              "startLine": 11,
+              "endLine": 11
+            },
+            "Left": {
+              "type": "*expr.Variable",
+              "position": {
+                "startPos": 122,
+                "endPos": 126,
+                "startLine": 11,
+                "endLine": 11
+              },
+              "VarName": {
+                "type": "*node.Identifier",
+                "position": {
+                  "startPos": 122,
+                  "endPos": 126,
+                  "startLine": 11,
+                  "endLine": 11
+                },
+                "Value": "var"
+              }
+            },
+            "Right": {
+              "type": "*scalar.String",
+              "position": {
+                "startPos": 130,
+                "endPos": 141,
+                "startLine": 11,
+                "endLine": 11
+              },
+              "Value": "'your name'"
+            }
+          },
+          "Stmt": {
+            "type": "*stmt.StmtList",
+            "position": {
+              "startPos": 143,
+              "endPos": 164,
+              "startLine": 11,
+              "endLine": 13
+            },
+            "Stmts": [
+              {
+                "type": "*stmt.Echo",
+                "position": {
+                  "startPos": 147,
+                  "endPos": 162,
+                  "startLine": 12,
+                  "endLine": 12
+                },
+                "Exprs": [
+                  {
+                    "type": "*scalar.String",
+                    "position": {
+                      "startPos": 152,
+                      "endPos": 161,
+                      "startLine": 12,
+                      "endLine": 12
+                    },
+                    "Value": "'goodbye'"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "Else": {
+        "type": "*stmt.Else",
+        "position": {
+          "startPos": 165,
+          "endPos": 202,
+          "startLine": 13,
+          "endLine": 15
+        },
+        "Stmt": {
+          "type": "*stmt.StmtList",
+          "position": {
+            "startPos": 170,
+            "endPos": 202,
+            "startLine": 13,
+            "endLine": 15
+          },
+          "Stmts": [
+            {
+              "type": "*stmt.Echo",
+              "position": {
+                "startPos": 174,
+                "endPos": 200,
+                "startLine": 14,
+                "endLine": 14
+              },
+              "Exprs": [
+                {
+                  "type": "*scalar.String",
+                  "position": {
+                    "startPos": 179,
+                    "endPos": 199,
+                    "startLine": 14,
+                    "endLine": 14
+                  },
+                  "Value": "'what is your name?'"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

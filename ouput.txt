@@ -1,0 +1,101 @@
+[*node.Root]
+  "Position": Pos{Line: 3-12 Pos: 7-173}
+  "Stmts":
+    [*stmt.Expression]
+      "Position": Pos{Line: 3-3 Pos: 7-24}
+      "Expr":
+        [*assign.Assign]
+          "Position": Pos{Line: 3-3 Pos: 7-23}
+          "Variable":
+            [*expr.Variable]
+              "Position": Pos{Line: 3-3 Pos: 7-11}
+              "VarName":
+                [*node.Identifier]
+                  "Position": Pos{Line: 3-3 Pos: 7-11}
+                  "Value": "var"
+          "Expression":
+            [*scalar.String]
+              "Position": Pos{Line: 3-3 Pos: 14-23}
+              "Value": "'my name'"
+    [*stmt.Expression]
+      "Position": Pos{Line: 4-4 Pos: 25-40}
+      "Expr":
+        [*assign.Assign]
+          "Position": Pos{Line: 4-4 Pos: 25-39}
+          "Variable":
+            [*expr.Variable]
+              "Position": Pos{Line: 4-4 Pos: 25-30}
+              "VarName":
+                [*node.Identifier]
+                  "Position": Pos{Line: 4-4 Pos: 25-30}
+                  "Value": "name"
+          "Expression":
+            [*scalar.String]
+              "Position": Pos{Line: 4-4 Pos: 33-39}
+              "Value": "'josh'"
+    [*stmt.If]
+      "Position": Pos{Line: 6-12 Pos: 42-173}
+      "Cond":
+        [*binary.Equal]
+          "Position": Pos{Line: 6-6 Pos: 46-63}
+          "Left":
+            [*expr.Variable]
+              "Position": Pos{Line: 6-6 Pos: 46-50}
+              "VarName":
+                [*node.Identifier]
+                  "Position": Pos{Line: 6-6 Pos: 46-50}
+                  "Value": "var"
+          "Right":
+            [*scalar.String]
+              "Position": Pos{Line: 6-6 Pos: 54-63}
+              "Value": "'my name'"
+      "Stmt":
+        [*stmt.StmtList]
+          "Position": Pos{Line: 6-8 Pos: 65-84}
+          "Stmts":
+            [*stmt.Echo]
+              "Position": Pos{Line: 7-7 Pos: 69-82}
+              "Exprs":
+                [*scalar.String]
+                  "Position": Pos{Line: 7-7 Pos: 74-81}
+                  "Value": "'hello'"
+      "ElseIf":
+        [*stmt.ElseIf]
+          "Position": Pos{Line: 8-10 Pos: 85-135}
+          "Cond":
+            [*binary.Equal]
+              "Position": Pos{Line: 8-8 Pos: 93-112}
+              "Left":
+                [*expr.Variable]
+                  "Position": Pos{Line: 8-8 Pos: 93-97}
+                  "VarName":
+                    [*node.Identifier]
+                      "Position": Pos{Line: 8-8 Pos: 93-97}
+                      "Value": "var"
+              "Right":
+                [*scalar.String]
+                  "Position": Pos{Line: 8-8 Pos: 101-112}
+                  "Value": "'your name'"
+          "Stmt":
+            [*stmt.StmtList]
+              "Position": Pos{Line: 8-10 Pos: 114-135}
+              "Stmts":
+                [*stmt.Echo]
+                  "Position": Pos{Line: 9-9 Pos: 118-133}
+                  "Exprs":
+                    [*scalar.String]
+                      "Position": Pos{Line: 9-9 Pos: 123-132}
+                      "Value": "'goodbye'"
+      "Else":
+        [*stmt.Else]
+          "Position": Pos{Line: 10-12 Pos: 136-173}
+          "Stmt":
+            [*stmt.StmtList]
+              "Position": Pos{Line: 10-12 Pos: 141-173}
+              "Stmts":
+                [*stmt.Echo]
+                  "Position": Pos{Line: 11-11 Pos: 145-171}
+                  "Exprs":
+                    [*scalar.String]
+                      "Position": Pos{Line: 11-11 Pos: 150-170}
+                      "Value": "'what is your name?'"
